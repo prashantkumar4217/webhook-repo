@@ -31,4 +31,24 @@ A Flask-based web service that receives GitHub webhook events and stores merged 
    git clone https://github.com/prashantkumar4217/webhook-repo.git
    cd webhook-repo
 2. Install dependencies:
+
+   ```bash
    pip install -r requirements.txt
+   
+3. Configure your MongoDB Atlas connection string in app.py:
+   ```bash
+   MONGO_URI = "your_mongodb_atlas_connection_string"
+4. Run the app:
+      ```bash
+         python app.py
+
+5. Access the frontend UI at: http://127.0.0.1:5000/
+6. API to get stored events:
+ ```bash
+GET /events
+
+
+               
+
+
+   
