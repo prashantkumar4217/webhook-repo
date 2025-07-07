@@ -44,8 +44,15 @@ A Flask-based web service that receives GitHub webhook events and stores merged 
 
 5. Access the frontend UI at: http://127.0.0.1:5000/
 6. API to get stored events:
- ```bash
-GET /events
+    ```bash
+     GET /events
+7. test using curl:
+   ```bash
+       curl -X POST http://127.0.0.1:5000/webhook/receiver \
+      -H "Content-Type: application/json" \
+      -d '{"action":"closed","pull_request":{"merged":true},"repository":{"name":"action-repo"}}'
+
+
 
 
                
