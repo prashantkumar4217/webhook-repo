@@ -30,3 +30,5 @@ A Flask-based web service that receives GitHub webhook events and stores merged 
    ```bash
    git clone https://github.com/prashantkumar4217/webhook-repo.git
    cd webhook-repo
+2. Install dependencies:
+   pip install -r requirements.txt
